@@ -1,16 +1,31 @@
 ---
 layout: default
 ---
-{% assign default_paths = site.pages | map: "path" %}
-{% assign page_paths = site.header_pages | default: default_paths %}
+<!--{% assign default_paths = site.pages | map: "path" %}-->
+<!--{% assign page_paths = site.header_pages | default: default_paths %}-->
 <div class="home">
-  {% for path in page_paths %}
   <div class="wrapper">
-    {% assign my_page = site.pages | where: "path", path | first %}
-    {% if my_page.title %}
-    <a class="title-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-    <div>{{ my_page.content | truncatewords: 30  }}</div>
-    {% endif %}
+    <h2 class="subtitle">Vidéos</h2>
+    {% for video in site.data.videos %}
+    <a href="{{ video.video }}" target=_blank>
+      <img class="video-pic" src="{{ video.picture }}">
+    </a>
+    {% endfor %}
   </div>
-  {% endfor %}
+  <div class="wrapper">
+    <h2 class="subtitle">Dates</h2>
+    <table class=date-table>
+    {% for date in site.data.dates %}
+    <tr class=date-row>
+      <td class=date-data>{{ date.date }}</td>
+      <td class=date-data>{{ date.city }}</td>
+      <td class=date-data>{{ date.place }}</td>
+      <td class=date-data>{{ date.more }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+  </div>
+  <div class="wrapper">
+    <h2 class="subtitle">Photos</h2>
+  </div>
 </div>
