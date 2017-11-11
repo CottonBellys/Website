@@ -2,7 +2,9 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: Verdana, Geneva, sans-serif !default;
+$alternate-font-family: Courier, Courier New, FreeMono, Liberation Mono, monospace;
+//$alternate-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -14,9 +16,9 @@ $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      darken(#ad9adb, 45%) !default;
 
-$grey-color:       #A08665 !default;
-$grey-color-light: lighten($grey-color, 5%) !default;
-$grey-color-dark:  darken($grey-color, 17%) !default;
+$grey-color:       #301D1C !default;
+$grey-color-light: lighten($grey-color, 15%) !default;
+$grey-color-dark:  darken($grey-color, 15%) !default;
 
 // Width of the content area
 $content-width:    800px !default;

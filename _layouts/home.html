@@ -4,8 +4,18 @@ layout: default
 <!--{% assign default_paths = site.pages | map: "path" %}-->
 <!--{% assign page_paths = site.header_pages | default: default_paths %}-->
 <div class="home">
+
+  {% if site.big_youtube_video_id %}
+    <div class="big-video-wrapper">
+      <div style="position:relative;height:0;padding-bottom:56.13%">
+        <iframe src="https://www.youtube.com/embed/{{ site.big_youtube_video_id }}?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" gesture="media" allowfullscreen></iframe>
+      </div>
+      <a class="listen-buy-link" href="{{ site.big_youtube_video_link }}">ECOUTER/ACHETER L'ALBUM</a>
+    </div>
+  {% endif %}
+
   <div class="wrapper">
-    <h2 class="subtitle">Vidéos</h2>
+    <h2 class="subtitle">VIDÉOS</h2>
     {% for video in site.data.videos %}
     <a href="{{ video.video }}" target=_blank>
       <img class="video-pic" src="{{ video.picture }}">
@@ -13,19 +23,36 @@ layout: default
     {% endfor %}
   </div>
   <div class="wrapper">
-    <h2 class="subtitle">Dates</h2>
-    <table class=date-table>
-    {% for date in site.data.dates %}
-    <tr class=date-row>
-      <td class=date-data>{{ date.date }}</td>
-      <td class=date-data>{{ date.city }}</td>
-      <td class=date-data>{{ date.place }}</td>
-      <td class=date-data>{{ date.more }}</td>
-    </tr>
-    {% endfor %}
-    </table>
+    <h2 class="subtitle">TOUR</h2>
+    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+    <a 
+      class="bit-widget-initializer" 
+      data-artist-name="Swans" 
+      data-display-local-dates="false" 
+      data-display-past-dates="true" 
+      data-auto-style="false" 
+      data-text-color="#000000" 
+      data-link-color="#301D1C" 
+      data-popup-background-color="#FFFFFF" 
+      data-background-color="rgba(0, 0, 0, 0)" 
+      data-display-limit="15" 
+      data-link-text-color="#FFFFFF">
+    </a>
+    <!--<table class=date-table>-->
+    <!--{% for date in site.data.dates %}-->
+    <!--<tr class=date-row>-->
+      <!--<td class=date-data>{{ date.date }}</td>-->
+      <!--<td class=date-data>{{ date.city }}</td>-->
+      <!--<td class=date-data>{{ date.place }}</td>-->
+      <!--<td class=date-data>{{ date.more }}</td>-->
+    <!--</tr>-->
+    <!--{% endfor %}-->
+    <!--</table>-->
   </div>
   <div class="wrapper">
-    <h2 class="subtitle">Photos</h2>
+    <h2 class="subtitle">PHOTOS</h2>
+  </div>
+  <div class="wrapper">
+    <h2 class="subtitle">SHOP</h2>
   </div>
 </div>

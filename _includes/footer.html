@@ -1,56 +1,72 @@
 <footer class="site-footer">
 
-
   <div class="wrapper">
-
-    <!--<h2 class="footer-heading">{{ site.title | escape }}</h2>-->
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h3>
-          Contacts
-        </h3>
-
-        <ul class="contact-list">
-          {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {% endif %}
-        </ul>
+    <h2 class="subtitle">CONTACTS</h2>
+    {% for contact in site.data.contacts %}
+    <div class="contact-wrapper">
+      <div>
+        {{ contact.name }}
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li class="center">
-            <a href="https://github.com/{{ site.github_username  }}">
-              <img class="social-media-icon" src="/assets/images/gh.png"></img>
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li class="center">
-            <a href="https://twitter.com/{{ site.twitter_username  }}">
-              <img class="social-media-icon" src="/assets/images/tw.png"></img>
-            </a>
-          </li>
-          {% endif %}
-          
-          {% if site.facebook_username %}
-          <li class="center">
-            <a href="https://www.facebook.com/{{ site.facebook_username  }}">
-              <img class="social-media-icon" src="/assets/images/fb.png"></img>
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-      </div>
+      <a href="mailto:{{ contact.mail }}">{{ contact.mail }}</a>
     </div>
-
+    {% endfor %}
+    {% if site.press_kit_link %}
+    <div class="presskit-wrapper">
+      <a href="{{ site.press_kit_link }}"><img src="/assets/pictures/cottons-press-kit-button.png"></a>
+    </div>
+    {% endif %}
   </div>
+
+  <!--<div class="wrapper">-->
+
+    <!--[><h2 class="footer-heading">{{ site.title | escape }}</h2><]-->
+
+    <!--<div class="footer-col-wrapper">-->
+      <!--<div class="footer-col footer-col-1">-->
+        <!--<h3>-->
+          <!--Contacts-->
+        <!--</h3>-->
+
+        <!--<ul class="contact-list">-->
+          <!--{% if site.email %}-->
+            <!--<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>-->
+          <!--{% endif %}-->
+        <!--</ul>-->
+      <!--</div>-->
+
+      <!--<div class="footer-col footer-col-2">-->
+        <!--<ul class="social-media-list">-->
+          <!--{% if site.github_username %}-->
+          <!--<li class="center">-->
+            <!--<a href="https://github.com/{{ site.github_username  }}">-->
+              <!--<img class="social-media-icon" src="/assets/images/gh.png"></img>-->
+            <!--</a>-->
+          <!--</li>-->
+          <!--{% endif %}-->
+
+          <!--{% if site.twitter_username %}-->
+          <!--<li class="center">-->
+            <!--<a href="https://twitter.com/{{ site.twitter_username  }}">-->
+              <!--<img class="social-media-icon" src="/assets/images/tw.png"></img>-->
+            <!--</a>-->
+          <!--</li>-->
+          <!--{% endif %}-->
+          
+          <!--{% if site.facebook_username %}-->
+          <!--<li class="center">-->
+            <!--<a href="https://www.facebook.com/{{ site.facebook_username  }}">-->
+              <!--<img class="social-media-icon" src="/assets/images/fb.png"></img>-->
+            <!--</a>-->
+          <!--</li>-->
+          <!--{% endif %}-->
+        <!--</ul>-->
+      <!--</div>-->
+
+      <!--<div class="footer-col footer-col-3">-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
 
 </footer>
 

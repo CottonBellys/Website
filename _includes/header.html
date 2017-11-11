@@ -3,8 +3,23 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <img class="site-title" src="/assets/pictures/logo_site.png">
+    <!--<a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
 
+    <article class="social-medias-bar">
+      {% if site.fb %}
+      <a href="https://www.facebook.com/{{ site.fb }}"><img class="social-media-icon" src="/assets/icons/fb.svg">FACEBOOK</a>
+      {% endif %}
+      {% if site.ig %}
+        <a href="https://www.instagram.com/{{ site.ig }}"><img class="social-media-icon" src="/assets/icons/ig.svg">INSTAGRAM</a>
+      {% endif %}
+      {% if site.yt %}
+        <a href="https://www.youtube.com/user/{{ site.yt }}"><img class="social-media-icon" src="/assets/icons/yt.svg">YOUTUBE</a>
+      {% endif %}
+      {% if site.bc %}
+        <a href="https://{{ site.bc }}.bandcamp.com"><img class="social-media-icon" src="/assets/icons/bc.svg">SHOP</a>
+      {% endif %}
+    </article>
   
   </div>
   <!--<div class="wrapper">-->
