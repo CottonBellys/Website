@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 30px solid $grey-color-dark;
+  border-image: url("../../../assets/pictures/black-bar.png") 30 30 stretch;
+  border-bottom: 30px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -180,7 +181,7 @@
   padding-right: 10px;
   display: inline-block;
 
-  div {
+div {
     font-family: $alternate-font-family;
     @include relative-font-size(1.2);
     font-weight: bold;
@@ -193,7 +194,8 @@
 }
 
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 30px solid $grey-color-dark;
+  border-image: url("../../../assets/pictures/black-bar.png") 30 30 stretch;
   padding: $spacing-unit 0;
 }
 
@@ -284,6 +286,28 @@
   }
 }
 
+.shop-article {
+  display: inline-block;
+  margin: 10px;
+
+  .shop-picture {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shop-link {
+    font-family: $alternate-font-family;
+    color: $grey-color-dark;
+    font-weight: bold;
+    @include relative-font-size(1.05);
+
+    &:visited {
+      color: $grey-color-dark;
+    }
+  }
+}
 
 .page-content {
   padding: $spacing-unit 0;

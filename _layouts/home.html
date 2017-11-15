@@ -54,5 +54,12 @@ layout: default
   </div>
   <div class="wrapper">
     <h2 class="subtitle">SHOP</h2>
+    {% for article in site.data.shop %}
+    <div class="shop-article">
+     
+      <a href="" class="shop-link"><img class="shop-picture" src="/assets/pictures/{{article.picture}}">{{ article.name }} - {{ article.price }} &euro;</a>
+    </div>
+    {% endfor %}
+
   </div>
 </div>
