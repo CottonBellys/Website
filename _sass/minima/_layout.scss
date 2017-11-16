@@ -2,9 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 30px solid $grey-color-dark;
-  border-image: url("../../../assets/pictures/black-bar.png") 30 30 stretch;
-  border-bottom: 30px solid $grey-color-light;
+  //border-top: 3px solid $grey-color-dark;
+  //border-bottom: 1px solid black;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -48,11 +47,13 @@
 }
 
 .wrapper {
-  margin-bottom: $spacing-unit*2;
+  margin-bottom: $spacing-unit*3;
 }
 
 .subtitle {
-  margin-left: -10%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-right: auto;
   font-size: 2.3em;
   font-weight: bold;
 }
@@ -183,19 +184,18 @@
 
 div {
     font-family: $alternate-font-family;
-    @include relative-font-size(1.2);
+    @include relative-font-size(1.35);
     font-weight: bold;
   }
 
   a {
-    @include relative-font-size(0.8);
+    @include relative-font-size(0.95);
     color: $grey-color-dark;
   }
 }
 
 .site-footer {
-  border-top: 30px solid $grey-color-dark;
-  border-image: url("../../../assets/pictures/black-bar.png") 30 30 stretch;
+  //border-top: 1px solid $grey-color-dark;
   padding: $spacing-unit 0;
 }
 
@@ -297,11 +297,22 @@ div {
     margin-right: auto;
   }
 
-  .shop-link {
+  div {
+    @include relative-font-size(1.2);
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .shop-link, div, ul {
+    font-weight: bold;
     font-family: $alternate-font-family;
     color: $grey-color-dark;
-    font-weight: bold;
-    @include relative-font-size(1.05);
+  }
+
+  .shop-link {
+    @include relative-font-size(1);
 
     &:visited {
       color: $grey-color-dark;
