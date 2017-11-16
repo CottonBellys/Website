@@ -1,16 +1,16 @@
 - name: Cotton Belly's (2009)
-  demat-link: something
+  demat-link: http://player.believe.fr/v2/3614971376315
   picture: 2009-COTTON BELLYS.jpg
   price: 12
 - name: This Day (2013)
-  demat-link: something
+  demat-link: http://player.believe.fr/v2/3610153994285
   picture: 2013-THIS DAY.jpg
   price: 12
 - name: Rainy Road (2016)
-  demat-link: something
+  demat-link: https://Musicast.lnk.to/RainyRoad
   picture: 2016-RAINY ROAD.jpg
   price: 12
 - name: Vinyle
   demat-link: 
-  picture: VINYLE.jpg
+  picture: RAINY ROAD VINYLE.jpg
   price: 20

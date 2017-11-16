@@ -50,6 +50,10 @@
   margin-bottom: $spacing-unit*3;
 }
 
+.centered-wrapper {
+  text-align: center;
+}
+
 .subtitle {
   text-align: center;
   border-bottom: 1px solid black;
@@ -286,9 +290,17 @@ div {
   }
 }
 
+.picture {
+  width: 300px;
+  margin: 15px;
+  border: 1px solid black;
+}
+
 .shop-article {
   display: inline-block;
   margin: 10px;
+  vertical-align: top;
+  text-align: left;
 
   .shop-picture {
     width: 300px;
@@ -299,6 +311,7 @@ div {
 
   div {
     @include relative-font-size(1.2);
+    color: $grey-color-dark;
   }
 
   ul {
@@ -308,11 +321,11 @@ div {
   .shop-link, div, ul {
     font-weight: bold;
     font-family: $alternate-font-family;
-    color: $grey-color-dark;
   }
 
   .shop-link {
-    @include relative-font-size(1);
+    @include relative-font-size(1.05);
+    color: $text-color;
 
     &:visited {
       color: $grey-color-dark;

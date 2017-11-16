@@ -38,21 +38,14 @@ layout: default
       data-display-limit="15" 
       data-link-text-color="#FFFFFF">
     </a>
-    <!--<table class=date-table>-->
-    <!--{% for date in site.data.dates %}-->
-    <!--<tr class=date-row>-->
-      <!--<td class=date-data>{{ date.date }}</td>-->
-      <!--<td class=date-data>{{ date.city }}</td>-->
-      <!--<td class=date-data>{{ date.place }}</td>-->
-      <!--<td class=date-data>{{ date.more }}</td>-->
-    <!--</tr>-->
-    <!--{% endfor %}-->
-    <!--</table>-->
   </div>
-  <div class="wrapper">
+  <div class="wrapper centered-wrapper">
     <h2 class="subtitle">PHOTOS</h2>
+    {% for picture in site.data.photos %}
+    <img class="picture" src="/assets/photos/{{ picture.name}}" alt="{{ picture.legend }}">
+    {% endfor %}
   </div>
-  <div class="wrapper">
+  <div class="wrapper centered-wrapper">
     <h2 class="subtitle">SHOP</h2>
     {% for article in site.data.shop %}
     <div class="shop-article">
@@ -62,11 +55,11 @@ layout: default
       <ul>
         {% if article.demat-link %}
         <li>
-          <a href="{{ demat-link }}" class="shop-link">Dématérialisé</a>
+          <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Dématérialisé</a>
         </li>
         {% endif %}
         <li>
-          <a href="" class="shop-link">Physique ({{ article.price }}&euro;)</a>
+          <a href="" class="shop-link" target="_blank">Physique ({{ article.price }}&euro;)</a>
         </li>
       </ul> 
     </div>
