@@ -42,7 +42,9 @@ layout: default
   <div class="wrapper centered-wrapper">
     <h2 class="subtitle">PHOTOS</h2>
     {% for picture in site.data.photos %}
-    <img class="picture" src="/assets/photos/{{ picture.name}}" alt="{{ picture.legend }}">
+      <a href="/assets/photos/{{ picture.name}}" target="_blank">
+        <img class="picture" src="/assets/photos/{{ picture.name}}" alt="{{ picture.legend }}">
+      </a>
     {% endfor %}
   </div>
   <div class="wrapper centered-wrapper">
