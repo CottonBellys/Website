@@ -57,7 +57,18 @@ layout: default
     {% for article in site.data.shop %}
     <div class="shop-article">
      
-      <a href="" class="shop-link"><img class="shop-picture" src="/assets/pictures/{{article.picture}}">{{ article.name }} - {{ article.price }} &euro;</a>
+      <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
+      <div>{{ article.name }}</div>
+      <ul>
+        {% if article.demat-link %}
+        <li>
+          <a href="{{ demat-link }}" class="shop-link">Dématérialisé</a>
+        </li>
+        {% endif %}
+        <li>
+          <a href="" class="shop-link">Physique ({{ article.price }}&euro;)</a>
+        </li>
+      </ul> 
     </div>
     {% endfor %}
 
