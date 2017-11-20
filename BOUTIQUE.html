@@ -10,21 +10,21 @@ lang: fr
     <h2 class="subtitle">Albums</h2>
     {% for article in site.data.shop.albums %}
     <div class="shop-article">
-     
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
-      <div>{{ article.name }}</div>
-      <ul>
-        {% if article.demat-link %}
-        <li>
-          <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Dématérialisé</a>
-        </li>
-        {% endif %}
         {% if article.price %}
-        <li>
-          <a href="" class="shop-link" target="_blank">{{ name }} ({{ article.price }}&euro;)</a>
-        </li>
+        <div>
+          <a href="" class="shop-link" target="_blank">{{ article.name }} - {{ article.price }}&euro;</a>
+        </div>
+        {% else %}
+        <div>{{ article.name }}</div>
         {% endif %}
-      </ul> 
+        {% if article.demat-link %}
+        <ul>
+          <li>
+            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Version dématérialisé</a>
+          </li>
+        </ul> 
+        {% endif %}
     </div>
     {% endfor %}
 
@@ -34,21 +34,21 @@ lang: fr
     <h2 class="subtitle">EP</h2>
     {% for article in site.data.shop.ep %}
     <div class="shop-article">
-     
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
-      <div>{{ article.name }}</div>
-      <ul>
-        {% if article.demat-link %}
-        <li>
-          <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Dématérialisé</a>
-        </li>
-        {% endif %}
         {% if article.price %}
-        <li>
-          <a href="" class="shop-link" target="_blank">{{ name }} ({{ article.price }}&euro;)</a>
-        </li>
+        <div>
+          <a href="" class="shop-link" target="_blank">{{ article.name }} ({{ article.price }}&euro;)</a>
+        </div>
+        {% else %}
+        <div>{{ article.name }}</div>
         {% endif %}
-      </ul> 
+        {% if article.demat-link %}
+        <ul>
+          <li>
+            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Version dématérialisé</a>
+          </li>
+        </ul> 
+        {% endif %}
     </div>
     {% endfor %}
 
@@ -58,21 +58,21 @@ lang: fr
     <h2 class="subtitle">Merchandising</h2>
     {% for article in site.data.shop.merch %}
     <div class="shop-article">
-     
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
-      <div>{{ article.name }}</div>
-      <ul>
-        {% if article.demat-link %}
-        <li>
-          <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Dématérialisé</a>
-        </li>
-        {% endif %}
         {% if article.price %}
-        <li>
-          <a href="" class="shop-link" target="_blank">{{ name }} ({{ article.price }}&euro;)</a>
-        </li>
+        <div>
+          <a href="" class="shop-link" target="_blank">{{ article.name }} ({{ article.price }}&euro;)</a>
+        </div>
+        {% else %}
+        <div>{{ article.name }}</div>
         {% endif %}
-      </ul> 
+        {% if article.demat-link %}
+        <ul>
+          <li>
+            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Version dématérialisé</a>
+          </li>
+        </ul> 
+        {% endif %}
     </div>
     {% endfor %}
 
