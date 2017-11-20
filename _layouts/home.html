@@ -14,11 +14,11 @@ layout: default
     </div>
   {% endif %}
 
-  <div class="wrapper">
+  <div class="wrapper centered-wrapper">
     <h2 class="subtitle">VIDÉOS</h2>
     {% for video in site.data.videos %}
-    <a href="{{ video.video }}" target=_blank>
-      <img class="video-pic" src="{{ video.picture }}">
+    <a href="https://www.youtube.com/watch?v={{ video.Id }}" target=_blank>
+      <img class="video-pic" src="http://img.youtube.com/vi/{{ video.id }}/mqdefault.jpg">
     </a>
     {% endfor %}
   </div>
