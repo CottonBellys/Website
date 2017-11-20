@@ -47,25 +47,4 @@ layout: default
       </a>
     {% endfor %}
   </div>
-  <div class="wrapper centered-wrapper">
-    <h2 class="subtitle">SHOP</h2>
-    {% for article in site.data.shop %}
-    <div class="shop-article">
-     
-      <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
-      <div>{{ article.name }}</div>
-      <ul>
-        {% if article.demat-link %}
-        <li>
-          <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Dématérialisé</a>
-        </li>
-        {% endif %}
-        <li>
-          <a href="" class="shop-link" target="_blank">Physique ({{ article.price }}&euro;)</a>
-        </li>
-      </ul> 
-    </div>
-    {% endfor %}
-
-  </div>
 </div>

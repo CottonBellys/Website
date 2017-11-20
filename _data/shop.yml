@@ -1,16 +1,53 @@
-- name: Cotton Belly's (2009)
-  demat-link: http://player.believe.fr/v2/3614971376315
-  picture: 2009-COTTON BELLYS.jpg
-  price: 12
-- name: This Day (2013)
-  demat-link: http://player.believe.fr/v2/3610153994285
-  picture: 2013-THIS DAY.jpg
-  price: 12
-- name: Rainy Road (2016)
-  demat-link: https://Musicast.lnk.to/RainyRoad
-  picture: 2016-RAINY ROAD.jpg
-  price: 12
-- name: Vinyle
-  demat-link: 
-  picture: RAINY ROAD VINYLE.jpg
-  price: 20
+albums:
+  - name: Cotton Belly's (2009)
+    demat-link: http://player.believe.fr/v2/3614971376315
+    picture: 2009-COTTON BELLYS.jpg
+    price: 12
+
+  - name: This Day (2013)
+    demat-link: http://player.believe.fr/v2/3610153994285
+    picture: 2013-THIS DAY.jpg
+    price: 12
+
+  - name: Rainy Road (2016)
+    demat-link: https://Musicast.lnk.to/RainyRoad
+    picture: 2016-RAINY ROAD.jpg
+    price: 12
+
+  - name: Vinyle
+    demat-link: 
+    picture: RAINY ROAD VINYLE.jpg
+    price: 20
+
+
+  - name: Live à la Chapelle des Lombards
+    picture: LIVE CHAPELLE DES LOMBARDS.jpg
+    demat-link: unknown
+    price: 12
+
+ep: 
+  - name: Live Session Vol1 (2017)
+    demat-link: https://Musicast.lnk.to/LiveSessionVol1
+    picture: 2017-Cotton belly's live session vol1.jpg
+    price: 12
+
+  - name: Live Session Vol2 (2017)
+    picture: 2017-LIVE SESSION VOL2.jpg
+    demat-link: unknown
+
+merch:
+  - name: T-Shirt Rainy road Homme
+    picture: t-shirt rainy H.jpg
+    price: 12
+  - name: T-Shirt Rainy Femme
+    picture: t-shirt rainy F.jpg
+    price: 12
+  - name: T-Shirt This day Homme
+    picture: t-shirt this day H.jpg
+    price: 12
+  - name: T-Shirt This day Femme
+    picture: t-shirt thday F.jpg
+    price: 12
+  - name: Sac Cotton Belly's
+    picture: sac-cotton.jpg
+    price: 12

@@ -36,6 +36,23 @@
   }
 }
 
+.main-nav {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+
+  a {
+    @include relative-font-size(1.8);
+    font-family: $alternate-font-family;
+    color: $grey-color;
+    font-weight: bold;
+
+    &:visited {
+      color: $grey-color;
+    }
+  }
+}
+
 .title-link{
   color: $grey-color-dark;
   @include relative-font-size(1.625);
@@ -356,8 +373,13 @@ div {
 }
 
 .post-link {
-  display: block;
-  @include relative-font-size(1.5);
+  color: $grey-color-dark;
+  @include relative-font-size(1.625);
+  
+
+  &:visited {
+    color: $grey-color-dark;
+  }
 }
 
 
