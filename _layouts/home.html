@@ -15,11 +15,12 @@ layout: default
   {% endif %}
 
   <div class="wrapper centered-wrapper">
-    <h2 class="subtitle">VIDÉOS</h2>
+    <h2 class="subtitle">VIDEOS</h2>
     {% for video in site.data.videos %}
-    <a href="https://www.youtube.com/watch?v={{ video.Id }}" target=_blank>
-      <img class="video-pic" src="http://img.youtube.com/vi/{{ video.id }}/mqdefault.jpg">
-    </a>
+      <img 
+        class="video-pic" 
+        src="http://img.youtube.com/vi/{{ video.id }}/mqdefault.jpg"
+        data-id="{{ video.id }}">
     {% endfor %}
   </div>
   <div class="wrapper">
@@ -42,9 +43,7 @@ layout: default
   <div class="wrapper centered-wrapper">
     <h2 class="subtitle">PHOTOS</h2>
     {% for picture in site.data.photos %}
-      <a href="/assets/photos/{{ picture.name}}" target="_blank">
-        <img class="picture" src="/assets/photos/{{ picture.name}}" alt="{{ picture.legend }}">
-      </a>
+      <img class="picture" src="/assets/photos/{{ picture.name}}" alt="{{ picture.legend }}">
     {% endfor %}
   </div>
 </div>

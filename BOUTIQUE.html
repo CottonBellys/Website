@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BOUTIQUE
+title: SHOP
 permalink: /shop/
 lang: fr
 ---
@@ -13,17 +13,13 @@ lang: fr
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
         <div>
-          <a href="" class="shop-link" target="_blank">{{ article.name }} - {{ article.price }}&euro;</a>
+          <a href="" class="shop-link" target="_blank">{{ article.name }} (cd) - {{ article.price }}&euro;</a>
         </div>
-        {% else %}
-        <div>{{ article.name }}</div>
         {% endif %}
         {% if article.demat-link %}
-        <ul>
-          <li>
-            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Version dématérialisé</a>
-          </li>
-        </ul> 
+        <div>
+            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">{{ article.name }} (Digital)</a>
+        </div> 
         {% endif %}
     </div>
     {% endfor %}
@@ -37,17 +33,13 @@ lang: fr
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
         <div>
-          <a href="" class="shop-link" target="_blank">{{ article.name }} ({{ article.price }}&euro;)</a>
+          <a href="" class="shop-link" target="_blank">{{ article.name }} (cd) - {{ article.price }}&euro;</a>
         </div>
-        {% else %}
-        <div>{{ article.name }}</div>
         {% endif %}
         {% if article.demat-link %}
-        <ul>
-          <li>
-            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Version dématérialisé</a>
-          </li>
-        </ul> 
+        <div>
+            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">{{ article.name }} (Digital)</a>
+        </div> 
         {% endif %}
     </div>
     {% endfor %}
@@ -61,17 +53,8 @@ lang: fr
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
         <div>
-          <a href="" class="shop-link" target="_blank">{{ article.name }} ({{ article.price }}&euro;)</a>
+          <a href="" class="shop-link" target="_blank">{{ article.name }} - {{ article.price }}&euro;</a>
         </div>
-        {% else %}
-        <div>{{ article.name }}</div>
-        {% endif %}
-        {% if article.demat-link %}
-        <ul>
-          <li>
-            <a href="{{ article.demat-link }}" class="shop-link" target="_blank">Version dématérialisé</a>
-          </li>
-        </ul> 
         {% endif %}
     </div>
     {% endfor %}

@@ -19,7 +19,7 @@
   margin-top: 20px;
 
   a {
-    @include relative-font-size(1.8);
+    @include relative-font-size(1.5);
     font-family: $alternate-font-family;
     color: $grey-color;
     font-weight: bold;
@@ -80,7 +80,7 @@
 }
 
 .video-pic {
-  width: 33.3%;
+  width: 200px;
   margin: $spacing-unit/2;
   border: 1px solid black;
 }
