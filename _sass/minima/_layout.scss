@@ -79,29 +79,6 @@
   font-weight: bold;
 }
 
-.video-pic {
-  width: 200px;
-  margin: $spacing-unit/2;
-  border: 1px solid black;
-}
-
-.date-row {
-  &:hover {
-    cursor: pointer;
-    background-color: rgba($grey-color-light, 0.2);
-  }
-  border-bottom: 1px solid $grey-color-dark;
-}
-
-.date-table {
-  border-collapse: collapse;
-}
-
-.date-data {
-  text-align: center;
-  padding: $spacing-unit/2;
-}
-
 .site-nav {
   //float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -307,10 +284,18 @@ div {
   }
 }
 
+.video-pic {
+  width: 200px;
+  margin: $spacing-unit/2;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 .picture {
   width: 300px;
   margin: 15px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .shop-article {
