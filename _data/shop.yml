@@ -27,9 +27,8 @@ albums:
 
 ep: 
   - name: Live Session Vol.1
-    demat-link: https://Musicast.lnk.to/LiveSessionVol1
     picture: 2017-Cotton belly's live session vol1.jpg
-    price: 12
+    demat-link: https://Musicast.lnk.to/LiveSessionVol1
 
   - name: Live Session Vol.2
     picture: 2017-LIVE SESSION VOL2.jpg

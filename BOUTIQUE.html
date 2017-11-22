@@ -13,7 +13,12 @@ lang: fr
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
         <div>
-          <a href="" class="shop-link" target="_blank">{{ article.name }} (cd) - {{ article.price }}&euro;</a>
+          <a href="" class="shop-link" target="_blank">
+            {{ article.name }}
+            {% if article.name != "Vinyle" %}
+            (cd) 
+            {% endif %}
+            - {{ article.price }}&euro;</a>
         </div>
         {% endif %}
         {% if article.demat-link %}
