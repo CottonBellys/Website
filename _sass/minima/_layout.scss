@@ -192,6 +192,14 @@ div {
   }
 }
 
+.newsletter-form {
+  text-align: center;
+
+  input {
+    margin: 7px;
+  }
+}
+
 .site-footer {
   //border-top: 1px solid $grey-color-dark;
   padding: $spacing-unit 0;
@@ -331,6 +339,20 @@ div {
 
     &:visited {
       color: $grey-color-dark;
+    }
+  }
+
+  .shop-link-button {
+    background: none!important;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    cursor: pointer;
+    @include relative-font-size(1.05);
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
