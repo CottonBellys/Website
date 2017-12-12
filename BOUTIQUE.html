@@ -2,8 +2,16 @@
 layout: page
 title: SHOP
 permalink: /shop/
-lang: fr
+lang: fr en
 ---
+  <button onclick='$(".cart-wrapper").slideToggle(1000)' class="cart-toggle"></button>
+  <div class="cart-wrapper" style="display:none;">
+    <h2>Cart</h2>
+    <div class="simpleCart_items"></div>
+    <div class="simpleCart_total"></div>
+    <a href="javascript:;" class="simpleCart_empty">Empty</a>
+    <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+  </div>
 
 
   <div class="wrapper centered-wrapper">
@@ -12,28 +20,15 @@ lang: fr
     <div class="shop-article">
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
-        <div>
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          
-            <!-- Identify your business so that you can collect the payments. -->
-            <input type="hidden" name="business" value="yann@cottonbellys.com">
-          
-            <!-- Specify a Buy Now button. -->
-            <input type="hidden" name="cmd" value="_xclick">
-          
-            <!-- Specify details about the item that buyers will purchase. -->
-            <input type="hidden" name="item_name" value="{{ article.name }}">
-            <input type="hidden" name="amount" value="{{ article.price }}">
-            <input type="hidden" name="currency_code" value="EUR">
-          
-            <!-- Display the payment button. -->
-            <input class="shop-link-button"
-                   type="submit" 
-                   name="submit" 
-                   border="0"
-                   value="{{ article.name }}{% if article.name != 'Vinyle' %} (cd) {% endif %}- {{ article.price }}&euro;">
-          </form>
+
+        <div class="simpleCart_shelfItem">
+          <a class="item_add shop-link" href="javascript:;">
+            <span class="item_name">{{ article.name }}{% if article.name != 'Vinyle' %} (cd) {% endif %}</span>
+            -
+            <span class="item_price">{{ article.price }}&euro;</span>
+          </a>
         </div>
+        
         {% endif %}
         {% if article.demat-link %}
         <div>
@@ -42,7 +37,6 @@ lang: fr
         {% endif %}
     </div>
     {% endfor %}
-
   </div>
 
   <div class="wrapper centered-wrapper">
@@ -51,27 +45,12 @@ lang: fr
     <div class="shop-article">
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
-        <div>
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          
-            <!-- Identify your business so that you can collect the payments. -->
-            <input type="hidden" name="business" value="yann@cottonbellys.com">
-          
-            <!-- Specify a Buy Now button. -->
-            <input type="hidden" name="cmd" value="_xclick">
-          
-            <!-- Specify details about the item that buyers will purchase. -->
-            <input type="hidden" name="item_name" value="{{ article.name }}">
-            <input type="hidden" name="amount" value="{{ article.price }}">
-            <input type="hidden" name="currency_code" value="EUR">
-          
-            <!-- Display the payment button. -->
-            <input class="shop-link-button"
-                   type="submit" 
-                   name="submit" 
-                   border="0"
-                   value="{{ article.name }} (cd) - {{ article.price }}&euro;">
-          </form>
+        <div class="simpleCart_shelfItem">
+          <a class="item_add shop-link" href="javascript:;">
+            <span class="item_name">{{ article.name }} (cd)</span>
+            -
+            <span class="item_price">{{ article.price }}&euro;</span>
+          </a>
         </div>
         {% endif %}
         {% if article.demat-link %}
@@ -90,30 +69,54 @@ lang: fr
     <div class="shop-article">
       <img class="shop-picture" src="/assets/pictures/{{article.picture}}">
         {% if article.price %}
-        <div>
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          
-            <!-- Identify your business so that you can collect the payments. -->
-            <input type="hidden" name="business" value="yann@cottonbellys.com">
-          
-            <!-- Specify a Buy Now button. -->
-            <input type="hidden" name="cmd" value="_xclick">
-          
-            <!-- Specify details about the item that buyers will purchase. -->
-            <input type="hidden" name="item_name" value="{{ article.name }}">
-            <input type="hidden" name="amount" value="{{ article.price }}">
-            <input type="hidden" name="currency_code" value="EUR">
-          
-            <!-- Display the payment button. -->
-            <input class="shop-link-button"
-                   type="submit" 
-                   name="submit" 
-                   border="0"
-                   value="{{ article.name }} - {{ article.price }}&euro;">
-          </form>
-        </div>
+          {% if article.sizes %}
+            <div class="shop-line">
+                <span>{{ article.name }}</span>
+                -
+                <span>{{ article.price }}&euro;</span>
+            </div>
+
+            <div class="shop-sizes-wrapper">
+              {% if article.sizes[0] == out %}
+                Out
+              {% else %}
+                {% for size in article.sizes %}
+                  <span class="simpleCart_shelfItem">
+                    <a class="item_add shop-link" href="javascript:;">
+                      <p hidden class="item_price">{{ article.price }}&euro;</p>
+                      <p hidden class="item_name">{{ article.name }}({{ size }})</p>
+                      {{ size }}
+                    </a>
+                  </span>
+                {% endfor %}
+              {% endif %}
+            </div>
+          {% else %}
+            <div class="simpleCart_shelfItem">
+              <a class="item_add shop-link" href="javascript:;">
+                <span class="item_name">{{ article.name }}</span>
+                -
+                <span class="item_price">{{ article.price }}&euro;</span>
+              </a>
+            </div>
+          {% endif %}
         {% endif %}
     </div>
     {% endfor %}
 
+  <!--<script src="https://www.paypalobjects.com/api/checkout.js" data-version-4></script>-->
   </div>
+
+  <script>
+    
+simpleCart({
+  currency: "EUR",
+
+  checkout: {
+    type: "PayPal",
+    email: "yann@cottonbellys.com"
+  }
+
+});
+  
+</script>

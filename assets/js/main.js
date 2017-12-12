@@ -1,6 +1,6 @@
 var init = function(){
-  var pictures = document.querySelectorAll(".picture")
-  var videos = document.querySelectorAll(".video-pic")
+  var pictures = document.querySelectorAll(".picture");
+  var videos = document.querySelectorAll(".video-pic");
 
   pictures.forEach(function(picture) {
     picture.onclick = function(){
@@ -19,4 +19,17 @@ var init = function(){
       });
     };
   });
+
+
+  var shopLinks = document.querySelectorAll(".shop-link");
+  var cart = document.querySelector(".cart-wrapper")
+  
+  shopLinks.forEach(function(sl) {
+    sl.onclick = function(){
+      if(window.getComputedStyle(cart).getPropertyValue("display") == "none"){
+        $(".cart-wrapper").slideToggle(1000);
+      }
+    }
+  });
+
 };

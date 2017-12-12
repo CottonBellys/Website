@@ -306,6 +306,77 @@ div {
   cursor: pointer;
 }
 
+.cart-toggle {
+  position: fixed;
+  top: 6px;
+  right: 30px;
+  z-index: 12;
+  background-image: url("../../../assets/icons/cart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 65px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #11ffee00;
+  border: 1px solid black;
+  padding: 5px;
+
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-color: #fdfdfd40;
+    outline: 0 !important;
+  }
+}
+
+.cart-wrapper {
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: $grey-color-light;
+  font-family: $alternate-font-family;
+  font-weight: bold;
+  @include relative-font-size(1.2);
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+
+  h2 {
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .simpleCart_total {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .headerRow, .itemRow {
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+
+  }
+
+  a {
+    color: $grey-color-dark;
+
+    &:visited {
+      color: $grey-color-dark;
+    }
+  }
+
+  .item-quantity, .item-increment, .item-decrement {
+    display: inline-block;
+  }
+
+}
+
 .shop-article {
   display: inline-block;
   margin: 10px;
@@ -342,18 +413,12 @@ div {
     }
   }
 
-  .shop-link-button {
-    background: none!important;
-    color: inherit;
-    border: none;
-    padding: 0!important;
-    font: inherit;
-    cursor: pointer;
+  .shop-line {
     @include relative-font-size(1.05);
+  }
 
-    &:hover {
-      text-decoration: underline;
-    }
+  .shop-sizes-wrapper {
+    text-align: right;
   }
 }
 

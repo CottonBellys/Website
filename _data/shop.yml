@@ -38,15 +38,30 @@ merch:
   - name: T-Shirt Rainy Road (men)
     picture: t-shirt rainy H.jpg
     price: 12
+    sizes: out
   - name: T-Shirt Rainy Road (women)
     picture: t-shirt rainy F.jpg
     price: 12
+    sizes:
+      - S
+      - L
+      - XL
   - name: T-Shirt This Day (men)
     picture: t-shirt this day H.jpg
     price: 12
+    sizes:
+      - S
+      - M
+      - L
   - name: T-Shirt This Day (women)
     picture: t-shirt thday F.jpg
     price: 12
+    sizes:
+      - S
+      - M
+      - L
+      - XL
+      - XXL
   - name: Cotton Belly's bag
     picture: sac-cotton.jpg
     price: 12
