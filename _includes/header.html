@@ -8,19 +8,27 @@
 
     <article class="social-medias-bar">
       {% if site.fb %}
-      <a href="https://www.facebook.com/{{ site.fb }}"><img class="social-media-icon" src="/assets/icons/fb.svg">FACEBOOK</a>
+      <div class="social-media-wrapper">
+        <a href="https://www.facebook.com/{{ site.fb }}"><img class="social-media-icon" src="/assets/icons/fb.svg">FACEBOOK</a>
+      </div>
       {% endif %}
       {% if site.ig %}
+      <div class="social-media-wrapper">
         <a href="https://www.instagram.com/{{ site.ig }}"><img class="social-media-icon" src="/assets/icons/ig.svg">INSTAGRAM</a>
+      </div>
       {% endif %}
       {% if site.yt %}
+      <div class="social-media-wrapper">
         <a href="https://www.youtube.com/user/{{ site.yt }}"><img class="social-media-icon" src="/assets/icons/yt.svg">YOUTUBE</a>
+      </div>
       {% endif %}
       <!--{% if site.bc %}-->
         <!--<a href="https://{{ site.bc }}.bandcamp.com"><img class="social-media-icon" src="/assets/icons/bc.svg">SHOP</a>-->
       <!--{% endif %}-->
       {% if site.tw %}
+      <div class="social-media-wrapper">
         <a href="https://twitter.com/{{ site.tw }}"><img class="social-media-icon" src="/assets/icons/tw.svg">TWITTER</a>
+      </div>
       {% endif %}
 
     </article>

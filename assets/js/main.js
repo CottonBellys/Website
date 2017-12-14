@@ -22,12 +22,12 @@ var init = function(){
 
 
   var shopLinks = document.querySelectorAll(".shop-link");
-  var cart = document.querySelector(".cart-wrapper")
+  var cart = document.querySelector(".cart")
   
   shopLinks.forEach(function(sl) {
     sl.onclick = function(){
       if(window.getComputedStyle(cart).getPropertyValue("display") == "none"){
-        $(".cart-wrapper").slideToggle(1000);
+        $(".cart").slideToggle(1000);
       }
     }
   });
