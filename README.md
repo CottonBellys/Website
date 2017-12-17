@@ -1,6 +1,18 @@
 # Comment updater les informations
 
-[TOC]
+- [Comment updater les informations](#)
+	- [Informations générales](#)
+		- [Pré-requis à la modification](#)
+		- [Informations sur le format des données](#)
+	- [Contacts](#)
+	- [Photos](#)
+		- [Ajouter une photo](#)
+		- [Supprimer une photo](#)
+	- [Vidéos](#)
+	- [Shop](#)
+		- [Albums](#)
+		- [EP](#)
+		- [Merch](#)
 
 ## Informations générales
 
