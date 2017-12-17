@@ -6,7 +6,7 @@
 		- [Informations sur le format des données](#informations-sur-le-format-des-données)
 	- [Contacts](#contacts)
 	- [Photos](#photos)
-		- [Ajouter une photo](#ajouter-une-phto)
+		- [Ajouter une photo](#ajouter-une-photo)
 		- [Supprimer une photo](#supprimer-une-photo)
 	- [Vidéos](#vidéos)
 	- [Shop](#shop)
