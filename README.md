@@ -1,18 +1,18 @@
 # Comment updater les informations
 
-- [Comment updater les informations](#)
-	- [Informations générales](#)
-		- [Pré-requis à la modification](#)
-		- [Informations sur le format des données](#)
-	- [Contacts](#)
-	- [Photos](#)
-		- [Ajouter une photo](#)
-		- [Supprimer une photo](#)
-	- [Vidéos](#)
-	- [Shop](#)
-		- [Albums](#)
-		- [EP](#)
-		- [Merch](#)
+- [Comment updater les informations](#comment-updater-les-informations)
+	- [Informations générales](#informations-générales)
+		- [Pré-requis à la modification](#pré-requis-à-la-modification)
+		- [Informations sur le format des données](#informations-sur-le-format-des-données)
+	- [Contacts](#contacts)
+	- [Photos](#photos)
+		- [Ajouter une photo](#ajouter-une-phto)
+		- [Supprimer une photo](#supprimer-une-photo)
+	- [Vidéos](#vidéos)
+	- [Shop](#shop)
+		- [Albums](#albums)
+		- [EP](#ep)
+		- [Merch](#merch)
 
 ## Informations générales
 
