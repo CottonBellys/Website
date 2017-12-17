@@ -1,18 +1,17 @@
 # Comment updater les informations
 
-- [Comment updater les informations](#comment-updater-les-informations)
-	- [Informations générales](#informations-générales)
-		- [Pré-requis à la modification](#pré-requis-à-la-modification)
-		- [Informations sur le format des données](#informations-sur-le-format-des-données)
-	- [Contacts](#contacts)
-	- [Photos](#photos)
-		- [Ajouter une photo](#ajouter-une-photo)
-		- [Supprimer une photo](#supprimer-une-photo)
-	- [Vidéos](#vidéos)
-	- [Shop](#shop)
-		- [Albums](#albums)
-		- [EP](#ep)
-		- [Merch](#merch)
+- [Informations générales](#informations-générales)
+	- [Pré-requis à la modification](#pré-requis-à-la-modification)
+	- [Informations sur le format des données](#informations-sur-le-format-des-données)
+- [Contacts](#contacts)
+- [Photos](#photos)
+	- [Ajouter une photo](#ajouter-une-photo)
+	- [Supprimer une photo](#supprimer-une-photo)
+- [Vidéos](#vidéos)
+- [Shop](#shop)
+	- [Albums](#albums)
+	- [EP](#ep)
+	- [Merch](#merch)
 
 ## Informations générales
 
@@ -24,7 +23,7 @@
 
 ### Informations sur le format des données
 
-La dernière ligne de la liste suivante est définitivement la plus importante à retenir.
+Les deux dernières lignes de la liste suivante sont à retenir, le reste est principalement technique.
 
 - Chaque fichier regroupe les descriptions de tous les _objets_ d'un certain _type d'objet_
   - Exemple de _type d'objet_ : les contacts du site web (au nombre de trois lors de la rédaction de ce document : THE BAND, TOUR, PROMO)
