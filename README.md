@@ -85,7 +85,7 @@ Mais dans tous les cas, la première étape est d'ajouter l'image correspondant 
 Ensuite, pour ajouter un _objet_ sous un _type d'objet_, ajouter l'objet correspondant à la suite des autres. Attention à bien l'aligner avec tous les autres (**tabulation** pour **ajouter un cran d'indentation**, **maj + tabulation** pour **retirer un cran d'indentation**, en **ayant toutes les lignes surlignées**)
 
 
-### Album
+### Albums
 
 ```
 - name: nom-de-lalbum
@@ -104,7 +104,7 @@ Ensuite, pour ajouter un _objet_ sous un _type d'objet_, ajouter l'objet corresp
 
 ### Merch
 
-De tous les _types d'objets_ celui-ci est le plus complexe, à cause des tailles. Un objet ayant toutes les tailles disponibles ressemle à ceci :
+De tous les _types d'objets_ celui-ci est le plus complexe, à cause des tailles. Un objet ayant toutes les tailles disponibles ressemble à ceci :
 
 ```
   - name: nom-du-produit
