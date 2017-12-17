@@ -42,8 +42,9 @@ layout: default
   </div>
   <div class="wrapper centered-wrapper">
     <h2 class="subtitle">PHOTOS</h2>
-    {% for picture in site.data.photos %}
-      <img class="picture" src="/assets/photos/{{ picture.name}}" alt="{{ picture.legend }}">
+    {% assign photos = site.static_files | where: "photos", true %}
+    {% for photo in photos %}
+      <img class="picture" src={{ photo.path }}>
     {% endfor %}
   </div>
 </div>
