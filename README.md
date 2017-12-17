@@ -2,15 +2,15 @@
 
 [TOC]
 
-##Informations générales
+## Informations générales
 
-###Pré-requis à la modification
+### Pré-requis à la modification
 - Il faut être connecté au compte CottonBellys pour mettre à jours les informations
 - Les informations pouvant être mises à jour se trouvent dans le dossier **\_data** (cliquer dessus pour accéder aux fichiers de données)
 - Chaque fichier (qui se termine par ".yml") à l'intérieur de ce dossier contient les données sur un type de données (les noms des fichiers sont explicites)
 - Pour éditer un fichier, il faut cliquer sur son nom, puis sur l'icone en forme de crayon en haut à droite de la fenêtre où se situent les données ("Edit this file")
 
-###Informations sur le format des données
+### Informations sur le format des données
 
 La dernière ligne de la liste suivante est définitivement la plus importante à retenir.
 
@@ -32,7 +32,7 @@ La dernière ligne de la liste suivante est définitivement la plus importante �
   - Exemple : le **m** de **mail** est au même niveau que le **n** de **name**
 - Ne **pas hésiter** à copier coller les _objets_ standards ci-dessous et à remplacer simplement les _valeurs_ des _attributs_
 
-##Contacts
+## Contacts
 
 ```
 - name: le-nom-de-mon-contact-en-majuscule
@@ -40,9 +40,9 @@ La dernière ligne de la liste suivante est définitivement la plus importante �
 ```
 
 
-##Photos
+## Photos
 
-###Ajouter une photo
+### Ajouter une photo
 
 1. Aller dans le dossier **assets/photos**
 2. Cliquer sur **Upload files**
@@ -51,14 +51,14 @@ La dernière ligne de la liste suivante est définitivement la plus importante �
 5. Reprendre à l'étape 3 pour chaque photo à ajouter
 6. Cliquer sur le bouton vert **Commit changes** au bas de la page
 
-###Supprimer une photo
+### Supprimer une photo
 
 1. Aller dans le dossier **assets/photos**
 2. Cliquer sur le nom du fichier de la photo à supprimer
 3. Cliquer sur l'icone en forme de poubelle en haut à droite
 4. Cliquer sur le bouton vert **Commit changes**
 
-##Vidéos
+## Vidéos
 
 Un seul attribut: l'**id** dela vidéo youtube
 
@@ -71,7 +71,7 @@ https://www.youtube.com/watch?v=diYS8jyOcFc
 ```
 L'**id** est la partie après le **v=**, donc ici : **diYS8jyOcFc**
 
-##shop
+## Shop
 
 Le shop est plus compliqué, puisqu'il existe trois _type d'objet_ dans un seul fichier:
 - albums
@@ -85,7 +85,7 @@ Mais dans tous les cas, la première étape est d'ajouter l'image correspondant 
 Ensuite, pour ajouter un _objet_ sous un _type d'objet_, ajouter l'objet correspondant à la suite des autres. Attention à bien l'aligner avec tous les autres (**tabulation** pour **ajouter un cran d'indentation**, **maj + tabulation** pour **retirer un cran d'indentation**, en **ayant toutes les lignes surlignées**)
 
 
-###Album
+### Album
 
 ```
 - name: nom-de-lalbum
@@ -94,7 +94,7 @@ Ensuite, pour ajouter un _objet_ sous un _type d'objet_, ajouter l'objet corresp
   price: prix-de-lalbum
 ```
 
-###EP
+### EP
 
 ```
   - name: nom-de-lep
@@ -102,7 +102,7 @@ Ensuite, pour ajouter un _objet_ sous un _type d'objet_, ajouter l'objet corresp
     demat-link: lien-vers-player-dematerialisé
 ```
 
-###Merch
+### Merch
 
 De tous les _types d'objets_ celui-ci est le plus complexe, à cause des tailles. Un objet ayant toutes les tailles disponibles ressemle à ceci :
 
