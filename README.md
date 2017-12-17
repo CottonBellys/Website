@@ -71,7 +71,7 @@ Les deux dernières lignes de la liste suivante sont à retenir, le reste est pr
 
 ## Vidéos
 
-Un seul attribut: l'**id** dela vidéo youtube
+Un seul attribut: l'**id** de la vidéo youtube
 
 ```
 - id: id-de-ma-vidéo-youtube
