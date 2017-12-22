@@ -71,11 +71,27 @@ Les deux dernières lignes de la liste suivante sont à retenir, le reste est pr
 
 ## Vidéos
 
-Un seul attribut: l'**id** de la vidéo youtube
+Le fichier videos contient deux types de vidéos :
+
+- La grande vidéo youtube
+  - Avec l'id youtube (voir plus bas) afind 'afficher la vidéo
+  - Le lien dématerialisé afin d'écouter / acheter l'album
 
 ```
-- id: id-de-ma-vidéo-youtube
+big_video:
+  id: SIT-HUDbOoQ
+  demat_link: https://Musicast.lnk.to/LiveSessionVol1  
 ```
+
+- La liste des ids des petits vidéos youtube
+
+```
+small_videos_ids:
+  - ge0sIx2YGps
+  - FZ23INu0xzw 
+  - t6XFlBOdV88
+```
+
 Dans une url youtube:
 ```
 https://www.youtube.com/watch?v=diYS8jyOcFc
