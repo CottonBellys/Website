@@ -22,8 +22,7 @@ albums:
 
   - name: Live at La Chapelle
     picture: LIVE CHAPELLE DES LOMBARDS.jpg
-    demat-link: unknown
-    price: 12
+    price: 15
 
 ep: 
   - name: Live Session Vol.1
@@ -32,7 +31,7 @@ ep:
 
   - name: Live Session Vol.2
     picture: 2017-LIVE SESSION VOL2.jpg
-    demat-link: unknown
+    demat-link: https://musicast.lnk.to/LiveSessionVol2
 
 merch:
   - name: T-Shirt Rainy Road (men)
