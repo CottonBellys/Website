@@ -19,20 +19,18 @@ albums:
     picture: RAINY ROAD VINYLE.jpg
     price: 20
 
-
   - name: Live at La Chapelle
     picture: LIVE CHAPELLE DES LOMBARDS.jpg
     price: 15
-
-ep: 
-  - name: Live Session Vol.1
-    picture: 2017-Cotton belly's live session vol1.jpg
+    
+  - name: Cotton Session Vol.1&2
+    demat-link: 
+    picture: 1-LVS1&2-POCHETTE.jpg
     demat-link: https://Musicast.lnk.to/LiveSessionVol1
-
-  - name: Live Session Vol.2
-    picture: 2017-LIVE SESSION VOL2.jpg
     demat-link: https://musicast.lnk.to/LiveSessionVol2
-
+    price: 12
+    
+    
 merch:
   - name: T-Shirt Rainy Road (men)
     picture: t-shirt rainy H.jpg
