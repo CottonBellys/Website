@@ -58,6 +58,7 @@ Les deux dernières lignes de la liste suivante sont à retenir, le reste est pr
 1. Aller dans le dossier **assets/photos**
 2. Cliquer sur **Upload files**
 3. Nommer la photo correctement sur votre ordinateur (plutôt **Band-inside.jpg** que **xM25pdjo26584Ovyrjk.jpg**)
+	- ⚠️ Le nom de la photo ne doit pas contenir d'espace dans son nom.
 4. Glisser-déposer la photo sur le cadre gris
 5. Reprendre à l'étape 3 pour chaque photo à ajouter
 6. Cliquer sur le bouton vert **Commit changes** au bas de la page
