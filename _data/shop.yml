@@ -1,4 +1,14 @@
 albums:
+  - name: Missi
+    demat-link: 
+    picture: 
+    price: 15
+    
+  - name: Vinyle
+    demat-link: 
+    picture:
+    price: 20
+    
   - name: Cotton Belly's
     demat-link: http://player.believe.fr/v2/3614971376315
     picture: 2009-COTTON BELLYS.jpg
