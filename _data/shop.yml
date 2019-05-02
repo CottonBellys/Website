@@ -4,7 +4,7 @@ albums:
     picture: POCHETTE MISSI PETITE.jpg
     price: 15
     
-  - name: Vinyle
+  - name: Vinyle Missi
     demat-link: 
     picture: POCHETTE MISSI PETITE.jpg
     price: 20
@@ -24,7 +24,7 @@ albums:
     picture: 2016-RAINY ROAD.jpg
     price: 12
 
-  - name: Vinyle
+  - name: Vinyle Rainy Road
     demat-link: 
     picture: RAINY ROAD VINYLE.jpg
     price: 20
