@@ -286,7 +286,7 @@ div {
  */
 
 .big-video-wrapper {
-  background-color: $grey-color;
+  background-color: $background-color;
   text-align: center;
 
   border-radius: 0 0 5px 5px;
@@ -335,7 +335,7 @@ div {
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #ffffffef;
+  background-color: #000000ef;
 
   h2 {
     margin-bottom: 0px;
@@ -343,7 +343,7 @@ div {
   }
 
   &:hover {
-    background-color: #ffffffff;
+    background-color: #000000ff;
     outline: 0 !important;
   }
 }
@@ -361,7 +361,7 @@ div {
 
   .cart {
     padding-bottom: 10px;
-    background-color: #ffffffcf;
+    background-color: #000000cf;
     overflow: auto;
     max-height: 50vh;
 
@@ -371,7 +371,7 @@ div {
 
     .itemRow {
       text-align: center;
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 15px;
       margin-top: 15px;
       min-width: 200px;
@@ -379,7 +379,7 @@ div {
   }
 
   .item-name {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     margin-bottom: 5px;
   }
 
@@ -389,12 +389,12 @@ div {
   }
 
   .simpleCart_remove {
-    color: #3c3c3c;
+    color: $grey-color-light;
   }
 
   .simpleCart_empty, .simpleCart_checkout {
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5px;
     margin-bottom: 10px;
     margin-left: auto;
@@ -408,7 +408,7 @@ div {
     transition-duration: 0.3s;
 
     &:hover {
-      background-color: #ffffffff;
+      background-color: #000000ff;
       outline: 0 !important;
     }
   }
@@ -418,7 +418,7 @@ div {
     transition-duration: 0.3s;
 
     &:hover {
-      background-color: #ffffffff;
+      background-color: #000000ff;
       outline: 0 !important;
     }
   }
@@ -441,10 +441,10 @@ div {
   }
 
   a {
-    color: $grey-color-dark;
+    color: $grey-color-light;
 
     &:visited {
-      color: $grey-color-dark;
+      color: $grey-color-light;
     }
   }
 
@@ -469,7 +469,7 @@ div {
 
   div {
     @include relative-font-size(1.2);
-    color: $grey-color-dark;
+    color: $grey-color-light;
   }
 
   ul {
@@ -486,7 +486,7 @@ div {
     color: $text-color;
 
     &:visited {
-      color: $grey-color-dark;
+      color: $grey-color-light;
     }
   }
 
