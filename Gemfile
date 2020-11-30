@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", ">= 3.6.3"
 gem "ffi", ">= 1.9.24"
+gem "kramdown-parser-gfm"
 
 
 
