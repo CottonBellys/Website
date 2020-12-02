@@ -21,17 +21,11 @@ albums:
 
   - name: Rainy Road
     demat-link: https://Musicast.lnk.to/RainyRoad
-    picture: 2016-RAINY ROAD.jpg
-    price: 12
 
   - name: Vinyle Rainy Road
     demat-link: 
     picture: RAINY ROAD VINYLE.jpg
     price: 20
-
-  - name: Live at La Chapelle
-    picture: LIVE CHAPELLE DES LOMBARDS.jpg
-    price: 15
     
   - name: Cotton Session Vol.1&2
     picture: 2017-COTTON SESSION 1&2.jpg
@@ -39,8 +33,3 @@ albums:
     demat-link: https://musicast.lnk.to/LiveSessionVol2
     price: 12
     
-    
-merch:
-  - name: Cotton Belly's bag
-    picture: sac-cotton.jpg
-    price: 12
