@@ -26,7 +26,7 @@ lang: fr en
 
         <div class="simpleCart_shelfItem">
           <a class="item_add shop-link" href="javascript:;">
-            <span class="item_name">{{ article.name }}{% unless article.name.include? 'Vinyle' %} (cd) {% endif %}</span>
+            <span class="item_name">{{ article.name }}{% unless article.name.include? 'Vinyle' %} (cd) {% endunless %}</span>
             -
             <span class="item_price">{{ article.price }}&euro;</span>
           </a>
