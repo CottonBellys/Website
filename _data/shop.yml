@@ -5,12 +5,10 @@ albums:
     picture: pochette last cotton.jpg
     price: 8
     
-    
   - name: Kingfisher's session
-    demat-link: https://player.believe.fr/v2/3616551581812
+    demat-link: https://bfan.link/kingfisher-s-session
     picture: Kingfisher's Session.jpg
    
-    
   - name: Missi
     demat-link: 
     picture: POCHETTE MISSI PETITE.jpg
@@ -22,12 +20,12 @@ albums:
     price: 20
     
   - name: Cotton Belly's
-    demat-link: http://player.believe.fr/v2/3614971376315
+    demat-link: https://bfan.link/cotton-belly-s
     picture: 2009-COTTON BELLYS.jpg
     price: 12
 
   - name: This Day
-    demat-link: http://player.believe.fr/v2/3610153994285
+    demat-link: https://bfan.link/this-day-1
     picture: 2013-THIS DAY.jpg
     price: 12
 
